@@ -56,6 +56,9 @@ def seed_students():
 def seed_grades():
     start_date = datetime.strptime("2022-09-01", "%Y-%m-%d")
     end_date = datetime.strptime("2023-06-30", "%Y-%m-%d")
+    now = datetime.now()
+    if end_date > now:
+        end_date = now
 
     sql_ex = "INSERT INTO grades(student_id, discipline_id, grade, date_of) VALUES(?, ?, ?, ?);"
 

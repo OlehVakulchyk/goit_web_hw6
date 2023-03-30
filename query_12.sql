@@ -8,4 +8,4 @@ JOIN groups gr ON gr.id = s.group_id
 WHERE d.id = 3 AND gr.id = 2  
      AND  date = (SELECT MAX(g.date_of) FROM grades g
      JOIN  students s ON s.id = g.student_id
-     WHERE d.id = 3 AND gr.id = 2)
+     WHERE discipline_id = 3 AND group_id = 2)
