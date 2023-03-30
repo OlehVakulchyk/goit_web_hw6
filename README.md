@@ -11,3 +11,4 @@
  2. datetime
  3. random
  4. faker
+ 5. prettytable
