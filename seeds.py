@@ -81,7 +81,6 @@ def seed_grades():
 
 
 if __name__ == '__main__':
-    # try:
     seed_teacher()
     seed_groups()
     seed_disciplines()
